@@ -1,0 +1,50 @@
+body {
+    background-image: url("./img/purple.jpg");
+    background-size: 100%;
+   }
+header {
+    padding: 20px;
+    background-image: linear-gradient(to bottom right, black, purple);
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+    text-align: center;
+}
+img {
+    border-radius: 8px;
+  }
+img:hover  {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+
+
+  h1 {
+    text-align: center;
+    font-family: "Times New Roman";
+    color: azure;
+    font-size: 55px;
+  }
+   .row {
+    display: flex;
+    text-align: center;
+    position: relative;
+    top: 75px;
+  }
+  
+  .column {
+    flex: 25.25%;
+    padding: 15px;
+  }
+ .polaroid {
+    background-image: linear-gradient(to top, purple, black);
+    opacity: 0.6;
+  }
+ .container {
+    text-align: center;
+    color: azure;
+  }
+  @media screen and (max-width: 500px) {
+    .column {
+      width: 100%;
+    }
+  }

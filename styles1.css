@@ -1,0 +1,138 @@
+body {
+  background-image: url("./img/purple.jpg");
+  background-size: 100%;
+   }
+   
+header {
+    padding: 20px;
+    background-image: linear-gradient(to bottom right, black, purple);
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+}
+img {
+    border-radius: 8px;
+    width: 350px;
+    height: 290px;
+    position: relative;
+    animation: mymove 7s;
+  }
+  h2 {
+    color: azure;
+    font-size: 45px;
+  }
+  /*button stiling*/
+button {
+  width: 100px; 
+  padding: 10px; 
+  cursor: pointer; 
+  box-shadow: 6px 6px 5px; 
+  -webkit-box-shadow: 6px 6px 5px #999; 
+  -moz-box-shadow: 6px 6px 5px #999; 
+  font-weight: bold; 
+  background: purple;
+  color:azure; 
+  border-radius: 10px; 
+  border: 1px 1px 1px 1px solid #999; 
+  font-size: 100%;
+}
+/*citi images*/
+img.div1 {
+  filter: brightness(1) saturate(3);
+}
+img.div2 {
+  filter: saturate(1.7);
+}
+img.div3 {
+  filter: brightness(.95) saturate(1.2);
+}
+img.div4 {
+    -ms-transform: rotate(270deg); /* IE 9 */
+    -webkit-transform: rotate(270deg); /* Safari 3-8 */
+    transform: rotate(270deg);
+    filter: brightness(1.3) saturate(2);
+  }
+img.div5 {
+  filter: brightness(.95) saturate(1.2);
+}
+img.div6 {
+  filter: brightness(.95) saturate(1.2);
+}
+img.div7 {
+  -ms-transform: rotate(270deg); /* IE 9 */
+  -webkit-transform: rotate(270deg); /* Safari 3-8 */
+  transform: rotate(270deg);
+  filter: saturate(2.4);
+}
+img.div8 {
+  filter: brightness(.95) saturate(1.2);
+}
+img.div9 {
+  filter: brightness(.95) saturate(1.2);
+}
+img.div10 {
+  filter: brightness(.95) saturate(1.2);
+}
+img.div11 {
+  filter: brightness(.95) saturate(1.2);
+}
+img.div12 {
+  filter: brightness(.98) saturate(2.37) contrast(1.22);
+}
+img.div13 {
+  filter: brightness(1.22) saturate(2.37) contrast(1.47);
+}
+img.div14 {
+  filter: brightness(.95) saturate(1.2);
+}
+img.div15{
+  -ms-transform: rotate(90deg); /* IE 9 */
+  -webkit-transform: rotate(90deg); /* Safari 3-8 */
+  transform: rotate(90deg);
+}
+img.div16 {
+  filter: brightness(.95) saturate(1.2);
+}
+/*landscapes images effets*/
+img.land1 {
+  filter: brightness(1) saturate(2) contrast(1);
+}
+img.land2 {
+  -ms-transform: rotate(270deg); /* IE 9 */
+  -webkit-transform: rotate(270deg); /* Safari 3-8 */
+  transform: rotate(270deg);
+  filter: brightness(.97) saturate(1.76) contrast(1);
+}
+img.land5 {
+  filter: brightness(.88) saturate(1.4) contrast(.95);
+}
+img.land10 {
+  filter: brightness(1.2) saturate(1.3) contrast(1.13);
+}
+img.land13 {
+  filter: brightness(1) saturate(1.67) contrast(1);
+}
+img.land14 {
+  filter: brightness(1.2) saturate(1.45) contrast(1);
+}
+/*left to right placement animation*/
+  @keyframes mymove {
+    from {left: -1400px;}
+    to {left: 0px;}
+  }
+/*placement grids of pics and header*/
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3,190px);
+    grid-template-rows: repeat(7, 100px);
+    grid-gap: 265px;
+  }
+  .headerGrid {
+    display: grid;
+    grid-template-columns: repeat(7, 2fr);
+  }
+  .title {
+    grid-column: 4/5;
+  }
+  .button {
+    grid-column: 7/ -1;
+  }
